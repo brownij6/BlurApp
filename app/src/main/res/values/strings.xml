@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">BlurApp</string>
+    <string name="blur_button">Blur Faces</string>
+    <string name="imageView_description">imageView</string>
+    <string name="click_here">Press here to select a video.</string>
 </resources>
