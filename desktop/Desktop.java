@@ -131,10 +131,10 @@ public class Desktop{
       try{
          System.gc();
          if(tmp.delete()){
-            System.out.println("true");
+          
          }
          if(tmp2.delete()){
-            System.out.println("true");
+           
          }
          
       }catch(Exception e){
@@ -143,13 +143,5 @@ public class Desktop{
          
    }
    
-   public static void flushInputStreamReader (Process process) throws IOException, InterruptedException {
-            BufferedReader input = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            String line=null;
-            StringBuilder s = new StringBuilder();
-            while(input.ready() && (line=input.readLine()) != null) {            
-                s.append(line);
-            }
-   }
 }
 
