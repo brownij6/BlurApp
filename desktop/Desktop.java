@@ -1,5 +1,3 @@
-
-
 import java.lang.*; 
 import java.io.*; 
 import java.util.Scanner;
@@ -17,12 +15,6 @@ import org.opencv.core.Core;
 import org.opencv.videoio.Videoio;
 import org.opencv.videoio.VideoWriter;
 
-import javafx.event.Event;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 
 
 
@@ -41,7 +33,7 @@ public class Desktop{
       
       CascadeClassifier ccProf = new CascadeClassifier();
       ccProf.load("./resources/haarcascade_profileface.xml");
-      
+            
        if(!src.isOpened()){
          System.out.println("Failed to open video file.");
          System.exit(0);
