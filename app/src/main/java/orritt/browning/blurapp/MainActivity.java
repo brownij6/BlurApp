@@ -36,6 +36,10 @@ import org.opencv.android.OpenCVLoader;
 import org.opencv.core.Core;
 import org.opencv.objdetect.CascadeClassifier;
 
+import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
+
+
+
 public class MainActivity extends AppCompatActivity {
 
     VideoView videoView;
@@ -46,8 +50,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         MainActivity.context = getApplicationContext();
+        FFmpeg f = FFmpeg.getInstance(getApplicationContext());
         setContentView(R.layout.activity_main);
         //connect buttons
         final Button button = (Button)findViewById(R.id.button);
